@@ -1,0 +1,2 @@
+# CapSpot
+CAPTCHA resolution
