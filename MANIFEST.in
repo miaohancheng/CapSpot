@@ -1,0 +1,1 @@
+include CapSpot/models/*.onnx

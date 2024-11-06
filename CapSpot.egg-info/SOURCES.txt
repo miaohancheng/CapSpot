@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+CapSpot/__init__.py
+CapSpot/image_matcher.py
+CapSpot.egg-info/PKG-INFO
+CapSpot.egg-info/SOURCES.txt
+CapSpot.egg-info/dependency_links.txt
+CapSpot.egg-info/requires.txt
+CapSpot.egg-info/top_level.txt
+CapSpot/models/det_model.onnx
+CapSpot/models/sim_model.onnx
