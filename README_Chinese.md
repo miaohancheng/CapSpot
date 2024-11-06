@@ -63,13 +63,16 @@ python setup.py install
 ## 使用方法
 ```python
 from CapSpot import ImageMatcher
-
-from CapSpot import ImageMatcher
 if __name__ == '__main__':
-  matcher = ImageMatcher()
-  matches = matcher.match_images('./test_pic/test1_mo.png', './test_pic/test1.png')
-  matcher.display_results('./test_pic/test1.png', matches)
-  print(matches)
+    matcher = ImageMatcher()
+    with open('./test_pic/test4_mo.png', 'rb') as template_file, open('./test_pic/test4.png', 'rb') as target_file:
+        template_image_data = template_file.read()
+        target_image_data = target_file.read()
+    matches = matcher.match_images(template_image_data, target_image_data)
+    result_stream = matcher.display_results(target_image_data, matches)
+    with open('result.png', 'wb') as f:
+        f.write(result_stream.read())
+    print(matches)
 ```
 
 ## 参数说明
